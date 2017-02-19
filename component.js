@@ -11,7 +11,11 @@ const styles = css`
 
 function component (props) {
   return html`<div class=${styles + (props.styles || '')}>
-    <input type='text' value=${props.message} oninput=${onEditMessage} />
+    <input
+      type='text'
+      value=${props.message}
+      oninput=${onEditMessage}
+    />
     <h3>${props.message}</h3>
   </div>`
 
